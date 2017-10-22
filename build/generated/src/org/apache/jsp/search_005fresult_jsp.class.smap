@@ -1,0 +1,18 @@
+SMAP
+search_005fresult_jsp.java
+JSP
+*S JSP
+*F
++ 0 search_result.jsp
+search_result.jsp
++ 1 nav.jsp
+nav.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,423:50
+1#1,58:473
+423#0,282:530
+1#2,25:812
+704#0,7:837
+*E

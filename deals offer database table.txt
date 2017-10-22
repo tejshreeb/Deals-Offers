@@ -1,0 +1,35 @@
+create database deals
+use deals
+user master-
+create table usermaster(user_id int(10) primary key auto_increment not null,name varchar(200) not null,email varchar(100) not null,
+c_pass varchar(20) not null,contact int(12) not null,address varchar(300) not null);
+
+product master-
+create table productmaster(user_id int(10) not null,P_name varchar(20) not null,
+ P_id int(20) auto_increment primary key not null,
+P_category varchar(30) not null,
+P_type varchar(30) not null,Price varchar(10) not null,
+Brand varchar(20) not null,image text not null,
+Description varchar(300) not null,Quantity int(5) not null,
+P_visibile boolean);
+
+order maaster-
+create table ordermaster(Ref_id varchar(20) primary key not null,
+P_id int(20),email varchar(100) not null,
+name varchar(100),address varchar(200) not null,
+price varchar(10) not null,timestamp timestamp);
+
+feedback master-
+create table feedback_master(Ref_id varchar(20) primary key not null,name varchar(100) not null,
+P_id int(20) not null,sarisfied boolean,refund_claim boolean);
+
+message board master-
+create table messageboard_master(msg_id int(10) primary key not null auto_increment,user_id1 varchar(100) not null,
+user_id2 varchar(100) not null,P_id int(20) not null,timestamp timestamp,Query varchar(500) not null,response varchar(500) not null);
+
+
+
+
+
+
+
